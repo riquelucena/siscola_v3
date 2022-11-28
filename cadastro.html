@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@400;700&family=Orbitron:wght@700&display=swap"
+        rel="stylesheet">
+    <title>Sistema de Alunos v3</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Siscola versão 3.0</h1>
+        <span>Seu sistema de controle de alunos</span>
+        <div>
+            <form><p>- Menu -</p>
+                <img class="icone-cadastro" src="img/registro.png" alt="cadastrar">
+                <a>Cadastrar Aluno</a>
+                <img class="icone-lista" src="img/lista-de-controle.png" alt="listagem de alunos">
+                <a href="lista_alunos.html">Lista de Alunos</a>
+                <img class="icone-busca" src="img/search.png" alt="busca">
+                <a href="busca_alunos.html">Busca de Aluno</a>
+                <img class="icone-voltar" src="img/voltar.png" alt="voltar para página principal">
+                <a href="index.html">Voltar</a>
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <h2>Cadastro de Alunos</h2>
+        <p>Insira os dados para cadastro do aluno.</p>
+
+        <div>
+            <form class="cadastro">
+                <label for="num-matricula">Número de Matrícula:</label>
+                <input type="text" id="num-matricula" value="0">
+                <label for="nome-aluno">Nome do aluno:</label>
+                <input type="text" id="nome-aluno" value="" placeholder="Digite o nome completo do aluno">
+                <label for="data-nascimento">Data de nascimento:</label>
+                <input type="date" id="data-nascimento" value="" required>
+                <label for="nome-pai">Nome do pai:</label>
+                <input type="text" id="nome-pai" value="" placeholder="Digite o nome completo do pai do aluno">
+                <label for="nome-mae">Nome da Mãe:</label>
+                <input type="text" id="nome-mae" value="" placeholder="Digite o nome completo da mãe do aluno">
+                <label for="telefone">Telefone para contato:</label>
+                <input type="tel" id="telefone" value="" placeholder="Digite o telefone para contato">
+                <label for="email">E-mail para contato:</label>
+                <input type="email" id="email" value="" placeholder="Digite o e-mail para contato">
+            </form>
+            <button class="botao" onclick="cadastrar()">Cadastrar</button>
+            <button class="botao" onclick="limpar()">Limpar</button>
+        </div>
+    </main>
+
+    <footer>
+        <h3 class="rodape-titulo">Acesse nossas redes</h3>
+        <ul class="redes-sociais">
+            <li><a href="https://www.facebook.com/"><img src="img/Facebook.png" alt="ícone do facebook"></a></li>
+            <li><a href="https://www.youtube.com/"></a><img src="img/Youtube.png" alt="ícone do youtube"></li>
+            <li><a href="https://web.whatsapp.com/"></a><img src="img/Whatsapp.png" alt="ícone do whatsapp"></li>
+            <li><a href="https://www.instagram.com/"><img src="img/Instagram.png" alt="ícone do instagram"></a></li>
+        </ul>
+        <p class="slogan">Syscola - Seu sistema de cadastramento de alunos</p>
+        <p class="copyright">&copy; Copyright Syscola 2022</p>
+    </footer>
+
+    <script src="js/cadastro.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@400;700&family=Orbitron:wght@700&display=swap"
+        rel="stylesheet">
+    <title>Sistema de Alunos v3</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Siscola versão 3.0</h1>
+        <span>Seu sistema de controle de alunos</span>
+
+        <div>
+            <form><p>- Menu -</p>
+                <img class="icone-cadastro" src="img/registro.png" alt="cadastrar">
+                <a href="cadastro.html">Cadastrar Aluno</a>
+                <img class="icone-lista" src="img/lista-de-controle.png" alt="listagem de alunos">
+                <a href="lista_alunos.html">Lista de Alunos</a>
+                <img class="icone-busca" src="img/search.png" alt="busca">
+                <a>Busca de Aluno</a>
+                <img class="icone-voltar" src="img/voltar.png" alt="voltar para página principal">
+                <a href="index.html">Voltar</a>
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <h2>Busca de Alunos</h2>
+        <p>Faça a busca pelo aluno cadastrado através de seu nome completo <br>
+        ou de seu número de matrícula. </p>
+
+        <div>
+            <form class="busca">
+                <label for="nome-aluno" class="center">Digite o nome completo do aluno ou o número de matrícula:</label>
+                <input type="text" id="input-pesquisa" value="">
+                <img src="img/search.png" alt="lupa de busca" id="imagem-pesquisa" type="button">
+            </form>
+        </div>
+        <div>
+            <ul class = lista-de-alunos>
+                <li class="numero"> </li>
+                <li class="nome"> </li>
+                <li class="aniversario"> </li>
+                <li class="mae"> </li>
+                <li class="pai"> </li>
+                <li class="telefone"> </li>
+                <li class="email"> </li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <h3 class="rodape-titulo">Acesse nossas redes</h3>
+        <ul class="redes-sociais">
+            <li><a href="https://www.facebook.com/"><img src="img/Facebook.png" alt="ícone do facebook"></a></li>
+            <li><a href="https://www.youtube.com/"></a><img src="img/Youtube.png" alt="ícone do youtube"></li>
+            <li><a href="https://web.whatsapp.com/"></a><img src="img/Whatsapp.png" alt="ícone do whatsapp"></li>
+            <li><a href="https://www.instagram.com/"><img src="img/Instagram.png" alt="ícone do instagram"></a></li>
+        </ul>
+        <p class="slogan">Syscola - Seu sistema de cadastramento de alunos</p>
+        <p class="copyright">&copy; Copyright Syscola 2022</p>
+    </footer>
+
+    <script src="js/jquery.js"></script>    
+    <script src="js/buscaAluno.js"></script>
+
+</body>
+
+</html>
