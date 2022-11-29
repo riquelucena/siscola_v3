@@ -64,10 +64,10 @@ h2, main p {
 
 .lista-alunos {
     position: relative;
-    left: 300px;
+    left: 400px;
 }
 
-.cadastro, .login, .busca {
+.cadastro, .busca {
     display: grid;
     padding: 20px;
     margin-top: 15px;
@@ -75,7 +75,18 @@ h2, main p {
     border-radius: 5px;
     width: 50%;
     position: relative;
-    left: 300px;    
+    left: 400px;    
+}
+
+.login {
+    display: grid;
+    padding: 20px;
+    margin-top: 15px;
+    border: 2px solid rgb(192, 192, 192);
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    left: 590px;
 }
 
 #nome-aluno, #data-nascimento, #nome-pai, #nome-mae, #telefone, #email {
@@ -92,7 +103,7 @@ h2, main p {
 
 .botao {
     position: relative;
-    left: 300px;
+    left: 397px;
     margin-top: 20px;
     border-radius: 5px;
     border-color: whitesmoke;
@@ -128,7 +139,7 @@ table td img {
 .imagem-login, .password {
     position: relative;
     width: 30px;
-    left: 160px;
+    left: 120px;
     top: 14px;   
 }
 .center {
@@ -139,13 +150,13 @@ table td img {
     position: relative;
     width: 200px;
     padding: 5px;
-    left:200px;
+    left:160px;
     bottom: 15px;
 }
 
 .botao-login {
     position: relative;
-    left: 550px;
+    left: 588px;
     width: 150px;
     margin-top: 20px;
     border-radius: 5px;
@@ -194,13 +205,13 @@ table td img {
 
 .lista-de-alunos {
     position: relative;
-    left: 300px;
+    left: 400px;
     color: black;
     list-style-type: none;
     border: 2px solid rgb(192, 192, 192);
     border-radius: 5px;
     margin-top: 15px;
-    width: 51.6%;
+    width: 51.2%;
     padding: 10px;
     font-weight: bold;
     line-height: 25px;    
