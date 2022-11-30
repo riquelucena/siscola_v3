@@ -20,8 +20,7 @@ function lerDados() {
     let dataFormatada = dataInput.split('-').reverse().join('/');
     aluno.dataNascimento = dataFormatada;
     
-    validaCampos(aluno);
-    validaMatricula(aluno);        
+    validaCampos(aluno);            
 };
 
 let numeroMatricula = document.querySelector("#num-matricula");
